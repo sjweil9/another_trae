@@ -22,7 +22,7 @@ client.user_timeline("TheTraeYoung").each do |tweet|
   next if TWITTER_IDS.include?(tweet.id)
   next unless tweet.text =~ /Another Day, Another Opportunity/
 
-  #client.retweet(tweet)
+  client.retweet(tweet)
   client.favorite(tweet)
   TWITTER_IDS << tweet.id
 end
