@@ -16,6 +16,4 @@ export TWITTER_ACCESS_TOKEN_SECRET (Access Token Secret).
 
 You can source this file from your `~/.bash_profile` or equivalent on whatever machine you plan to run the bot, or whatever other approach you prefer to make sure all the above variable names are successfully set in your ENV. 
 
-Make sure to create a twitter_ids.txt file in the directory with the script.
-
 The simplest way to run is to set up a cron to run the script every day / hour / however frequently you want to check. Edit `/etc/crontab` to add a cron with `ruby /path/to/script`. 
